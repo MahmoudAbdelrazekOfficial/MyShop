@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\myshop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43D7122F-5116-4DB9-8B22-F1085B521DBD}|myshop1.web\\myshop.web.csproj|e:\\projects\\myshop\\myshop1.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D7122F-5116-4DB9-8B22-F1085B521DBD}|myshop1.web\\myshop.web.csproj|solutionrelative:myshop1.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43D7122F-5116-4DB9-8B22-F1085B521DBD}|myshop1.web\\myshop.web.csproj|e:\\projects\\myshop\\myshop1.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D7122F-5116-4DB9-8B22-F1085B521DBD}|myshop1.web\\myshop.web.csproj|solutionrelative:myshop1.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4838AF14-606F-4E5B-B12A-48014C4E2070}|myshop.DataAccess\\myshop.DataAccess.csproj|e:\\projects\\myshop\\myshop.dataaccess\\implementation\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4838AF14-606F-4E5B-B12A-48014C4E2070}|myshop.DataAccess\\myshop.DataAccess.csproj|solutionrelative:myshop.dataaccess\\implementation\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4838AF14-606F-4E5B-B12A-48014C4E2070}|myshop.DataAccess\\myshop.DataAccess.csproj|e:\\projects\\myshop\\myshop.dataaccess\\implementation\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4838AF14-606F-4E5B-B12A-48014C4E2070}|myshop.DataAccess\\myshop.DataAccess.csproj|solutionrelative:myshop.dataaccess\\implementation\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1171ED03-98C3-419A-A006-93D85EEC56AD}|myshop.Entities\\myshop.Entities.csproj|e:\\projects\\myshop\\myshop.entities\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1171ED03-98C3-419A-A006-93D85EEC56AD}|myshop.Entities\\myshop.Entities.csproj|solutionrelative:myshop.entities\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1171ED03-98C3-419A-A006-93D85EEC56AD}|myshop.Entities\\myshop.Entities.csproj|e:\\projects\\myshop\\myshop.entities\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1171ED03-98C3-419A-A006-93D85EEC56AD}|myshop.Entities\\myshop.Entities.csproj|solutionrelative:myshop.entities\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4838AF14-606F-4E5B-B12A-48014C4E2070}|myshop.DataAccess\\myshop.DataAccess.csproj|e:\\projects\\myshop\\myshop.dataaccess\\implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4838AF14-606F-4E5B-B12A-48014C4E2070}|myshop.DataAccess\\myshop.DataAccess.csproj|solutionrelative:myshop.dataaccess\\implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1171ED03-98C3-419A-A006-93D85EEC56AD}|myshop.Entities\\myshop.Entities.csproj|e:\\projects\\myshop\\myshop.entities\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1171ED03-98C3-419A-A006-93D85EEC56AD}|myshop.Entities\\myshop.Entities.csproj|solutionrelative:myshop.entities\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop1.web\\Program.cs",
+              "RelativeDocumentMoniker": "myshop1.web\\Program.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop1.web\\Program.cs",
+              "RelativeToolTip": "myshop1.web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T17:39:30.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop.Entities\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "myshop.Entities\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop.Entities\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "myshop.Entities\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T17:31:23.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop1.web\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "myshop1.web\\Controllers\\CategoryController.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop1.web\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "myshop1.web\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAwwFsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T17:28:04.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop.DataAccess\\Implementation\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "myshop.DataAccess\\Implementation\\UnitOfWork.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop.DataAccess\\Implementation\\UnitOfWork.cs",
+              "RelativeToolTip": "myshop.DataAccess\\Implementation\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T13:50:57.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop.Entities\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "myshop.Entities\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop.Entities\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "myshop.Entities\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T13:49:43.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop.Entities\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "myshop.Entities\\Repositories\\ICategoryRepository.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop.Entities\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "myshop.Entities\\Repositories\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T13:41:15.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop.DataAccess\\Implementation\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "myshop.DataAccess\\Implementation\\CategoryRepository.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop.DataAccess\\Implementation\\CategoryRepository.cs",
+              "RelativeToolTip": "myshop.DataAccess\\Implementation\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T13:41:44.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\myshop\\myshop.DataAccess\\Implementation\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "myshop.DataAccess\\Implementation\\GenericRepository.cs",
+              "ToolTip": "E:\\Projects\\myshop\\myshop.DataAccess\\Implementation\\GenericRepository.cs",
+              "RelativeToolTip": "myshop.DataAccess\\Implementation\\GenericRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwC8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T17:45:05.977Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
