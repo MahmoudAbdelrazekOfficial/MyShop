@@ -4,12 +4,13 @@ using myshop.Entities.Repositories;
 using myshop1.Entities.Models;
 
 
-namespace myshop.web.Controllers
+namespace myshop.web.Areas.Area.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public CategoryController(IUnitOfWork unitOfWork )
+        public CategoryController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -41,7 +42,7 @@ namespace myshop.web.Controllers
         [HttpGet]
         public IActionResult Edit(int? id)
         {
-            if(id == null | id == 0)
+            if (id == null | id == 0)
             {
                 NotFound();
             }
@@ -65,7 +66,7 @@ namespace myshop.web.Controllers
             return View(category);
         }
         [HttpGet]
-        public IActionResult Delete(int? id )
+        public IActionResult Delete(int? id)
         {
             if (id == null | id == 0)
             {
@@ -80,8 +81,8 @@ namespace myshop.web.Controllers
         {
             //var categoryFromDb = _context.Categories.Find(id);
             var categoryFromDb = _unitOfWork.Category.GetFirstOrDefault(x => x.Id == id);
-            
-            if (categoryFromDb == null )
+
+            if (categoryFromDb == null)
             {
                 NotFound();
             }

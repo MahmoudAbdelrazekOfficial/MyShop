@@ -3,6 +3,7 @@ $(document).ready(function () {
     loaddata();
 });
 
+
 function loaddata() {
     dtble = $("#mytable").DataTable({
         "ajax": {
@@ -24,9 +25,6 @@ function loaddata() {
                 }
 
                 }
-
-            
-
         ]
     });
 }
@@ -43,8 +41,8 @@ function DeleteItem(url) {
     }).then((result) => {
         if (result.isConfirmed) {
             $.ajax({
-                type: "DELETE",
-                url: url,                
+                url: url,
+                type: "DELETE",                   
                 success: function (data) {
                     if (data.success) {
                         toastr.success(data.message);

@@ -254,3 +254,7 @@ E:\Projects\myshop\myshop1.web\obj\Debug\net8.0\refint\myshop.web.dll
 E:\Projects\myshop\myshop1.web\obj\Debug\net8.0\myshop.web.pdb
 E:\Projects\myshop\myshop1.web\obj\Debug\net8.0\myshop.web.genruntimeconfig.cache
 E:\Projects\myshop\myshop1.web\obj\Debug\net8.0\ref\myshop.web.dll
+E:\Projects\myshop\myshop1.web\obj\Debug\net8.0\myshop.web.sourcelink.json
+E:\Projects\myshop\myshop1.web\obj\Debug\net8.0\myshop.web.MvcApplicationPartsAssemblyInfo.cs
+E:\Projects\myshop\myshop1.web\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Projects\myshop\myshop1.web\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

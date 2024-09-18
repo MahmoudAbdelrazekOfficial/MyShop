@@ -9,3 +9,5 @@ E:\Projects\myshop\myshop.Entities\obj\Debug\net8.0\myshop.Entities.dll
 E:\Projects\myshop\myshop.Entities\obj\Debug\net8.0\refint\myshop.Entities.dll
 E:\Projects\myshop\myshop.Entities\obj\Debug\net8.0\myshop.Entities.pdb
 E:\Projects\myshop\myshop.Entities\obj\Debug\net8.0\ref\myshop.Entities.dll
+E:\Projects\myshop\myshop.Entities\obj\Debug\net8.0\myshop.Entities.sourcelink.json
+E:\Projects\myshop\myshop.Entities\obj\Debug\net8.0\myshop.Entities.csproj.AssemblyReference.cache

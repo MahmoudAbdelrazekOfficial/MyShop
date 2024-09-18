@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\Images\\Products\\4c4284fe-3fed-4d26-953a-d12762d3e240.jpg"
     },
     {
+      "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\4d9ef36e-d921-4fac-bb14-9a023849c4af.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\4d9ef36e-d921-4fac-bb14-9a023849c4af.jpg"
+    },
+    {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\5f4d61ba-5f02-4a22-8305-1148a341710f.jpg",
       "PackagePath": "staticwebassets\\Images\\Products\\5f4d61ba-5f02-4a22-8305-1148a341710f.jpg"
     },
@@ -105,12 +109,20 @@
       "PackagePath": "staticwebassets\\Images\\Products\\ac682fc5-fad4-485e-a800-a2a2893fa8ab.jpg"
     },
     {
+      "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\b88e22d8-029f-4799-a451-b2fb9ee28b11.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\b88e22d8-029f-4799-a451-b2fb9ee28b11.jpg"
+    },
+    {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\bf36fcdf-954c-4602-8623-6711534e873e.jpg",
       "PackagePath": "staticwebassets\\Images\\Products\\bf36fcdf-954c-4602-8623-6711534e873e.jpg"
     },
     {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\cc5daf8c-d71b-4a7b-b212-f923aa0274a9.jpg",
       "PackagePath": "staticwebassets\\Images\\Products\\cc5daf8c-d71b-4a7b-b212-f923aa0274a9.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\d4b382c2-2192-42c0-89e2-9dc13350271e.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\d4b382c2-2192-42c0-89e2-9dc13350271e.jpg"
     },
     {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\e1b82bb1-13bc-40fe-a3a0-8dc18e0425ab.jpg",
@@ -419,6 +431,10 @@
     {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\js\\demo.js",
       "PackagePath": "staticwebassets\\js\\demo.js"
+    },
+    {
+      "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\js\\myshop-form.js",
+      "PackagePath": "staticwebassets\\js\\myshop-form.js"
     },
     {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\js\\order.js",
