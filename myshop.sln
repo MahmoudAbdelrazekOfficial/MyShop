@@ -5,9 +5,11 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myshop.web", "myshop1.web\myshop.web.csproj", "{43D7122F-5116-4DB9-8B22-F1085B521DBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myshop.DataAccess", "myshop.DataAccess\myshop.DataAccess.csproj", "{4838AF14-606F-4E5B-B12A-48014C4E2070}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myshop.DataAccess", "myshop.DataAccess\myshop.DataAccess.csproj", "{4838AF14-606F-4E5B-B12A-48014C4E2070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myshop.Entities", "myshop.Entities\myshop.Entities.csproj", "{1171ED03-98C3-419A-A006-93D85EEC56AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myshop.Entities", "myshop.Entities\myshop.Entities.csproj", "{1171ED03-98C3-419A-A006-93D85EEC56AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myshop.Utilities", "myshop.Utilities\myshop.Utilities.csproj", "{CD0737E5-2590-464F-A7F1-9B355663A8B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1171ED03-98C3-419A-A006-93D85EEC56AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1171ED03-98C3-419A-A006-93D85EEC56AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1171ED03-98C3-419A-A006-93D85EEC56AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0737E5-2590-464F-A7F1-9B355663A8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0737E5-2590-464F-A7F1-9B355663A8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0737E5-2590-464F-A7F1-9B355663A8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0737E5-2590-464F-A7F1-9B355663A8B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -149,16 +149,17 @@ namespace myshop.web.Areas.Area.Controllers
                
             }
             //_context.Products.Remove(categoryFromDb);
-            _unitOfWork.Product.Remove(productFromDb);
+            
             var oldImg = Path.Combine(_webHostEnvironment.WebRootPath,productFromDb.Img.TrimStart('\\'));
             if (System.IO.File.Exists(oldImg))
             {
                 System.IO.File.Delete(oldImg);
             }
+            _unitOfWork.Product.Remove(productFromDb);
             //_context.SaveChanges();
             _unitOfWork.Complete();
              return Json(new { success = true, message = " Item has been deleted " });
-            
         }
+        
     }
 }
