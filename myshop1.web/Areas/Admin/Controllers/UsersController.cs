@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using myshop.DataAccess;
+using myshop.Utilities;
 using System.Security.Claims;
 
 namespace myshop.web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
