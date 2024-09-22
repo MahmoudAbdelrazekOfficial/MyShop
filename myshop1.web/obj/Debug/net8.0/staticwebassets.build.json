@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cdWo4uuK51PWUSftBwSrxOhsT2IfF0aUKDphiJhmC6o=",
+  "Hash": "pkMgsmvvUDF3veIpZaUTId7oYSruUfD/mnkbKgksUio=",
   "Source": "myshop.web",
   "BasePath": "_content/myshop.web",
   "Mode": "Default",
@@ -2333,6 +2333,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\ac682fc5-fad4-485e-a800-a2a2893fa8ab.jpg"
+    },
+    {
+      "Identity": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\b9236502-0374-4678-8268-0584cba389d0.jpg",
+      "SourceId": "myshop.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\",
+      "BasePath": "_content/myshop.web",
+      "RelativePath": "Images/Products/b9236502-0374-4678-8268-0584cba389d0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\b9236502-0374-4678-8268-0584cba389d0.jpg"
     },
     {
       "Identity": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\bf36fcdf-954c-4602-8623-6711534e873e.jpg",
@@ -5620,25 +5639,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\plugins\\sweetalert2\\sweetalert2.min.js"
-    },
-    {
-      "Identity": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\shoppingcart\\index.html",
-      "SourceId": "myshop.web",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\",
-      "BasePath": "_content/myshop.web",
-      "RelativePath": "shoppingcart/index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\shoppingcart\\index.html"
     },
     {
       "Identity": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\shoppingcart\\style.css",

@@ -19,7 +19,7 @@ namespace myshop.DataAccess.Implementation
             _context = context; 
             _dbSet = _context.Set<T>();
         }
-        public void add(T entity)
+        public void Add(T entity)
         {
             //Categories.Add(category);
             _dbSet.Add(entity);

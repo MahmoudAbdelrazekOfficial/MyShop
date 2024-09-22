@@ -6,7 +6,8 @@
             {
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <a href="\Customer\Home\Details\@item.Id"> <img class="card-img-top" src="~/@item.Img" width="450" height="300" /> </a>
+                        
+                        <a asp-action="Details" asp-route-ProductId="@item.Id"> <img class="card-img-top" src="~/@item.Img" width="450" height="300" /> </a>
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <h5 class="fw-bolder">@item.Name</h5>
@@ -14,7 +15,9 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"> <a class="btn btn-outline-dark mt-auto " href="#">Add to cart  </a> </div>
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto " asp-action="Index" asp-controller="Cart">Add to cart  </a>
+                                </div>
                         </div>
                     </div>
                 </div>

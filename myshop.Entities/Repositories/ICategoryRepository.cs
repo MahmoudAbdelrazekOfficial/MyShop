@@ -1,4 +1,5 @@
-﻿using myshop1.Entities.Models;
+﻿using myshop.Entities.Models;
+using myshop1.Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,6 @@ namespace myshop.Entities.Repositories
 {
     public interface ICategoryRepository : IGenericRepository<Category>
     {
-        void update(Category category);
-
+        void Update(Category category);
     }
 }

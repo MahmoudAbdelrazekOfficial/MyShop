@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using myshop.DataAccess.Implementation;
+using myshop.Entities.Models;
 using myshop.Entities.Repositories;
-using myshop.Entities.ViewModels;
+using myshop.Utilities;
+using System.Security.Claims;
 
 namespace myshop.web.Areas.Customer.Controllers
 {
@@ -18,14 +21,47 @@ namespace myshop.web.Areas.Customer.Controllers
             var products = _unitOfWork.Product.GetAll();
             return View(products);
         }
-        public IActionResult Details(int? id)
+
+        [HttpGet]
+        [Authorize]
+        public IActionResult Details(int ProductId)
         {
-            ShoppingCartViewModel obj = new ShoppingCartViewModel()
+            
+            ShoppingCart obj = new ShoppingCart()
             {
-                Product = _unitOfWork.Product.GetFirstOrDefault(v => v.Id == id, IncludeWord: "Category"),
+                ProductId = ProductId,
+                Product = _unitOfWork.Product.GetFirstOrDefault(v => v.Id == ProductId, IncludeWord: "Category"),
                 Count = 1
             };
             return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public IActionResult Details(ShoppingCart shoppingCart)
+        {
+            
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            shoppingCart.ApplicationUserId = claim.Value;
+
+            ShoppingCart Cartobj = _unitOfWork.ShoppingCart.GetFirstOrDefault(
+                u => u.ApplicationUserId == claim.Value && u.ProductId == shoppingCart.ProductId);
+
+            if (Cartobj == null)
+            {
+                _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Complete();
+            }
+            else
+            {
+                _unitOfWork.ShoppingCart.IncreaseCount(Cartobj, shoppingCart.Count);
+                _unitOfWork.Complete();
+            }
+
+
+            return RedirectToAction("Index");
         }
     }
 }

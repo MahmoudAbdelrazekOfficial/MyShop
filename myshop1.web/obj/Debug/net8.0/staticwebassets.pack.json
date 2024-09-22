@@ -109,6 +109,10 @@
       "PackagePath": "staticwebassets\\Images\\Products\\ac682fc5-fad4-485e-a800-a2a2893fa8ab.jpg"
     },
     {
+      "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\b9236502-0374-4678-8268-0584cba389d0.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\b9236502-0374-4678-8268-0584cba389d0.jpg"
+    },
+    {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\Images\\Products\\bf36fcdf-954c-4602-8623-6711534e873e.jpg",
       "PackagePath": "staticwebassets\\Images\\Products\\bf36fcdf-954c-4602-8623-6711534e873e.jpg"
     },
@@ -935,10 +939,6 @@
     {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\plugins\\sweetalert2\\sweetalert2.min.js",
       "PackagePath": "staticwebassets\\plugins\\sweetalert2\\sweetalert2.min.js"
-    },
-    {
-      "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\shoppingcart\\index.html",
-      "PackagePath": "staticwebassets\\shoppingcart\\index.html"
     },
     {
       "Id": "E:\\Projects\\myshop\\myshop1.web\\wwwroot\\shoppingcart\\style.css",

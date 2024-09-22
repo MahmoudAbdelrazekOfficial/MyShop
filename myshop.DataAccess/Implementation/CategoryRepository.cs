@@ -17,7 +17,7 @@ namespace myshop.DataAccess.Implementation
             _context = context;
         }
 
-        public void update(Category category)
+        public void Update(Category category)
         {
             var categoryInDb = _context.Categories.FirstOrDefault(x=> x.Id == category.Id);
             if (categoryInDb != null)

@@ -31,7 +31,7 @@ namespace myshop.web.Areas.Area.Controllers
             if (ModelState.IsValid)
             {
                 //_context.Categories.Add(category);\
-                _unitOfWork.Category.add(category);
+                _unitOfWork.Category.Add(category);
                 //_context.SaveChanges();
                 _unitOfWork.Complete();
                 TempData["Create"] = "Data has Created Succesfully";
@@ -57,7 +57,7 @@ namespace myshop.web.Areas.Area.Controllers
             if (ModelState.IsValid)
             {
                 //_context.Categories.Update(category);
-                _unitOfWork.Category.update(category);
+                _unitOfWork.Category.Update(category);
                 //_context.SaveChanges();
                 _unitOfWork.Complete();
                 TempData["Update"] = "Data has Updated Succesfully";

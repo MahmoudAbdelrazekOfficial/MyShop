@@ -18,7 +18,7 @@ namespace myshop.Entities.Repositories
         //_context.Categories.Where(x=>x.Id == id).ToSingleOrDefault();
         T GetFirstOrDefault(Expression<Func<T, bool>>? predicate = null , string? IncludeWord = null );
         //_context.Categories.Add(category);
-        void add (T entity);
+        void Add (T entity);
 
         //_context.Categories.Remove(category);
         void Remove (T entity);

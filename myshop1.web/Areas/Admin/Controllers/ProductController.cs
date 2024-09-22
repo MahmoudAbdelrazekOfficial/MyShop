@@ -68,7 +68,7 @@ namespace myshop.web.Areas.Area.Controllers
 
             
 
-                _unitOfWork.Product.add(productVM.Product);
+                _unitOfWork.Product.Add(productVM.Product);
             
                 _unitOfWork.Complete();
                 TempData["Create"] = "Item has Created Succesfully";
