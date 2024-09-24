@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using myshop.Entities.Models;
 using myshop.Entities.Repositories;
 using myshop.Entities.ViewModels;
+using myshop.Utilities;
 using System.Security.Claims;
 
 namespace myshop.web.Areas.Customer.Controllers
@@ -25,11 +26,13 @@ namespace myshop.web.Areas.Customer.Controllers
 
             ShoppingCartViewModel = new ShoppingCartViewModel()
             {
-                CartsList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value , IncludeWord:"Product")
+                CartsList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value , IncludeWord:"Product"),
+                OrderHeader = new()
             };
+
             foreach (var item in ShoppingCartViewModel.CartsList)
             {
-                ShoppingCartViewModel.TotalCarts += (item.Count * item.Product.Price);
+                ShoppingCartViewModel.OrderHeader.TotalPrice += (item.Count * item.Product.Price);
             }
 
             return View(ShoppingCartViewModel);
@@ -64,6 +67,67 @@ namespace myshop.web.Areas.Customer.Controllers
             _unitOfWork.ShoppingCart.Remove(shoppingCart);
             _unitOfWork.Complete();
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Summary()
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            ShoppingCartViewModel = new ShoppingCartViewModel()
+            {
+                CartsList =_unitOfWork.ShoppingCart.GetAll(u=>u.ApplicationUserId == claim.Value, IncludeWord:"Product"),
+                OrderHeader = new()
+            };
+            ShoppingCartViewModel.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.GetFirstOrDefault(x => x.Id == claim.Value);
+
+            ShoppingCartViewModel.OrderHeader.Name = ShoppingCartViewModel.OrderHeader.ApplicationUser.Name;
+            ShoppingCartViewModel.OrderHeader.Address = ShoppingCartViewModel.OrderHeader.ApplicationUser.Address;
+            ShoppingCartViewModel.OrderHeader.City = ShoppingCartViewModel.OrderHeader.ApplicationUser.City;
+            ShoppingCartViewModel.OrderHeader.Phone = ShoppingCartViewModel.OrderHeader.ApplicationUser.PhoneNumber;
+
+            foreach (var item in ShoppingCartViewModel.CartsList)
+            {
+                ShoppingCartViewModel.OrderHeader.TotalPrice += (item.Count * item.Product.Price);
+            }
+            return View(ShoppingCartViewModel);
+        }
+        [HttpPost]
+        [ActionName("Summary")]
+        [ValidateAntiForgeryToken]
+        public IActionResult PostSummary(ShoppingCartViewModel shoppingCartViewModel)
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            shoppingCartViewModel.CartsList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value, IncludeWord: "Product");
+
+            ShoppingCartViewModel.OrderHeader.OrderStatus = SD.Pending;
+            ShoppingCartViewModel.OrderHeader.PaymentStatus = SD.Pending;
+            ShoppingCartViewModel.OrderHeader.OrderDate = DateTime.Now;
+            ShoppingCartViewModel.OrderHeader.ApplicationUserId = claim.Value;
+
+
+            foreach (var item in ShoppingCartViewModel.CartsList)
+            {
+                ShoppingCartViewModel.OrderHeader.TotalPrice += (item.Count * item.Product.Price);
+            }
+            _unitOfWork.OrderHeader.Add(shoppingCartViewModel.OrderHeader);
+            _unitOfWork.Complete();
+
+            foreach (var item in ShoppingCartViewModel.CartsList)
+            {
+                OrderDetail orderDetail = new OrderDetail()
+                {
+                    ProductId = item.ProductId,
+                    OrderId = ShoppingCartViewModel.OrderHeader.Id,
+                    Price = item.Product.Price,
+                    Count = item.Count
+                };
+                _unitOfWork.OrderDetail.Add(orderDetail);
+                _unitOfWork.Complete();
+            }
+            return View();
         }
     }
 }
