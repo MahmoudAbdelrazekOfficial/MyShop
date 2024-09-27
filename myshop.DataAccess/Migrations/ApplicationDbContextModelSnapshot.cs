@@ -240,9 +240,6 @@ namespace myshop1.web.Migrations
                     b.Property<int>("Count")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderHeaderId")
-                        .HasColumnType("int");
-
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
@@ -254,7 +251,7 @@ namespace myshop1.web.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderHeaderId");
+                    b.HasIndex("OrderId");
 
                     b.HasIndex("ProductId");
 
@@ -303,8 +300,8 @@ namespace myshop1.web.Migrations
                     b.Property<string>("PaymentStatus")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SessionId")
                         .HasColumnType("nvarchar(max)");
@@ -483,7 +480,7 @@ namespace myshop1.web.Migrations
                 {
                     b.HasOne("myshop.Entities.Models.OrderHeader", "OrderHeader")
                         .WithMany()
-                        .HasForeignKey("OrderHeaderId")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

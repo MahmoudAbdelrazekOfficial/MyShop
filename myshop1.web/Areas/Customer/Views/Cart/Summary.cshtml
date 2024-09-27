@@ -1,4 +1,7 @@
 ﻿@model ShoppingCartViewModel
+@using Microsoft.Extensions.Options
+@inject IOptions<myshop.Utilities.StripeBank> Stripe
+
 
 <!doctype html>
 <html>
@@ -93,7 +96,7 @@
                         <div class="d-flex align-items-center py-2">
                             <div class="display-5">Total</div>
                             <div class="ml-auto d-flex">
-                                <div class="text-primary text-uppercase px-3">usd</div>
+                                
                                 <div class="font-weight-bold">@Model.OrderHeader.TotalPrice EGP</div>
                             </div>
                         </div>

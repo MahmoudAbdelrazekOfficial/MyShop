@@ -11,7 +11,7 @@ function loaddata() {
         "columns": [
             { "data": "id" },
             { "data": "name"},
-            { "data": "phoneNumber" },
+            { "data": "phone" },
             { "data": "applicationUser.email" },
             { "data": "orderStatus" },
             { "data": "totalPrice" },
