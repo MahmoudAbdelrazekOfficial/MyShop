@@ -1,15 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using myshop.DataAccess;
 using myshop.Entities.Models;
 using myshop.Entities.Repositories;
 using myshop.Entities.ViewModels;
+using myshop.Utilities;
 using myshop1.Entities.Models;
 
 
 namespace myshop.web.Areas.Area.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.AdminRole)]
+
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

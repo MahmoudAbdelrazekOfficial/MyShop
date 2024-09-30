@@ -33,6 +33,8 @@ builder.Services.AddSingleton<IEmailSender, EmailSender>();
 //Service for UnitOfWork 
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -53,6 +55,7 @@ StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey"
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 app.MapRazorPages();
 
 app.MapControllerRoute(

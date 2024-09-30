@@ -59,7 +59,17 @@ namespace myshop.web.Areas.Customer.Controllers
         public IActionResult Minus(int cartID)
         {
             var shoppingCart = _unitOfWork.ShoppingCart.GetFirstOrDefault(x => x.Id == cartID);
-            _unitOfWork.ShoppingCart.DecreaseCount(shoppingCart, 1);
+            if (shoppingCart.Count<=1)
+            {
+                _unitOfWork.ShoppingCart.Remove(shoppingCart);
+                var count = _unitOfWork.ShoppingCart.GetAll(x => x.ApplicationUserId == shoppingCart.ApplicationUserId).ToList().Count() -1;
+                HttpContext.Session.SetInt32(SD.SessionKey, count);
+            }
+            else
+            {
+                _unitOfWork.ShoppingCart.DecreaseCount(shoppingCart, 1);
+            }
+            
             _unitOfWork.Complete();
             return RedirectToAction("Index");
         }
@@ -68,6 +78,8 @@ namespace myshop.web.Areas.Customer.Controllers
             var shoppingCart = _unitOfWork.ShoppingCart.GetFirstOrDefault(x => x.Id == cartID);
             _unitOfWork.ShoppingCart.Remove(shoppingCart);
             _unitOfWork.Complete();
+            var count = _unitOfWork.ShoppingCart.GetAll(x => x.ApplicationUserId == shoppingCart.ApplicationUserId).ToList().Count() ;
+            HttpContext.Session.SetInt32(SD.SessionKey, count);
             return RedirectToAction("Index");
         }
 
