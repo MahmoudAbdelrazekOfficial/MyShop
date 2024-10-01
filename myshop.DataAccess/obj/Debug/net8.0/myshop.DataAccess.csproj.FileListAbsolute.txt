@@ -16,3 +16,5 @@ E:\Projects\myshop\myshop.DataAccess\obj\Debug\net8.0\myshop.DataAccess.pdb
 E:\Projects\myshop\myshop.DataAccess\obj\Debug\net8.0\myshop.DataAccess.genruntimeconfig.cache
 E:\Projects\myshop\myshop.DataAccess\obj\Debug\net8.0\ref\myshop.DataAccess.dll
 E:\Projects\myshop\myshop.DataAccess\obj\Debug\net8.0\myshop.DataAccess.sourcelink.json
+E:\Projects\myshop\myshop.DataAccess\bin\Debug\net8.0\myshop.Utilities.dll
+E:\Projects\myshop\myshop.DataAccess\bin\Debug\net8.0\myshop.Utilities.pdb

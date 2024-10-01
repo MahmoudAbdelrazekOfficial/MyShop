@@ -4905,7 +4905,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
-          "myshop.Entities": "1.0.0"
+          "myshop.Entities": "1.0.0",
+          "myshop.Utilities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/myshop.DataAccess.dll": {}

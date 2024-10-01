@@ -36,6 +36,9 @@
             "projectReferences": {
               "E:\\Projects\\myshop\\myshop.Entities\\myshop.Entities.csproj": {
                 "projectPath": "E:\\Projects\\myshop\\myshop.Entities\\myshop.Entities.csproj"
+              },
+              "E:\\Projects\\myshop\\myshop.Utilities\\myshop.Utilities.csproj": {
+                "projectPath": "E:\\Projects\\myshop\\myshop.Utilities\\myshop.Utilities.csproj"
               }
             }
           }

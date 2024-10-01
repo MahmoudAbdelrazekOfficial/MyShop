@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using myshop.Utilities;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Stripe;
+using myshop.DataAccess.DbInitializer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,7 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>(
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
 //Service for UnitOfWork 
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
@@ -53,6 +55,8 @@ app.UseRouting();
 //pipeline for stripe 
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 
+SeedDb();
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
@@ -67,3 +71,12 @@ app.MapControllerRoute(
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+void SeedDb()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+        dbInitializer.Initialize();
+    }
+}
